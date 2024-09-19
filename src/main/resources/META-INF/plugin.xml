@@ -1,0 +1,48 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<!--suppress ALL -->
+<idea-plugin>
+  <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+  <id>com.n0zzy.phpie</id>
+
+  <!-- Public plugin name should be written in Title Case.
+       Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+  <name>Phpie(PHP) Language Support</name>
+
+  <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+  <vendor url="https://github.com/n0zzy">N0zzy@Phpie</vendor>
+  <resource-bundle>messages.PhpieBundle</resource-bundle>
+
+  <!-- Product and plugin compatibility requirements.
+       Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <!-- Extension points defined by the plugin.
+       Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+  <extensions defaultExtensionNs="com.intellij">
+    <colorSettingsPage
+            implementation="com.n0zzy.phpie.colors.PhpieColorSettingsPage"/>
+    <additionalTextAttributes
+            scheme="Default"
+            file="colors/phpieColorsDefault.xml"/>
+    <codeInsight.template.postfixTemplateProvider
+            language="Phpie"
+            implementationClass="com.n0zzy.phpie.templates.PhpiePostfixTemplateProvider"/>
+    <postStartupActivity
+            implementation="com.n0zzy.phpie.notification.PhpieStartupNotification"/>
+    <fileType
+            name="Phpie(PHP)"
+            implementationClass="com.n0zzy.phpie.language.PhpieFileType"
+            fieldName="INSTANCE"
+            language="Phpie"
+            extensions="php"/>
+    <lang.parserDefinition
+          language="Phpie"
+          implementationClass="com.n0zzy.phpie.parser.defenition.PhpieParserDefinition"/>
+    <lang.syntaxHighlighterFactory
+            language="Phpie"
+            implementationClass="com.n0zzy.phpie.highlighter.PhpieSyntaxHighlighterFactory"/>
+    <completion.contributor
+            language="Phpie"
+            implementationClass="com.n0zzy.phpie.contributors.PhpieCompletionContributor"/>
+  </extensions>
+</idea-plugin>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="10px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 20 10"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+   <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="-0.0011811" y1="4.91693" x2="19.8335" y2="4.91693">
+    <stop offset="0" stop-opacity="1" stop-color="#BAB5FF"/>
+    <stop offset="1" stop-opacity="1" stop-color="#6C69FF"/>
+   </linearGradient>
+    <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="-69.0571" y1="-2.56614" x2="-49.0571" y2="-2.56614">
+     <stop offset="0" stop-opacity="1" stop-color="#1713F2"/>
+     <stop offset="1" stop-opacity="1" stop-color="#9593FA"/>
+    </linearGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path fill="url(#id0)" fill-rule="nonzero" d="M2 2l1 0 0 1c0,0 1,0 1,0 0,-1 0,-1 1,-1 0,0 1,1 1,1 0,0 1,1 1,1 0,1 -1,2 -1,3 -1,0 -1,0 -2,0 -1,0 -2,0 -2,0l0 2 -2 0 2 -7zm1 3c0,1 0,1 0,1 0,0 0,0 1,0 0,0 0,0 0,0 1,0 1,0 1,-1 0,0 0,0 0,-1 0,0 0,0 0,0 0,-1 -1,-1 -1,-1 0,0 0,0 -1,1 0,0 0,0 0,0 0,1 0,1 0,1zm6 2l-2 0 2 -6 1 0 0 2c0,0 0,0 1,0 0,-1 0,-1 1,-1 0,0 0,0 1,1 0,0 0,0 0,1 0,0 0,0 0,1l-1 2 -1 0 0 -3c1,0 1,0 1,0 0,0 0,0 -1,-1 0,0 0,0 0,0 0,0 -1,0 -1,1 0,0 0,0 -1,0 0,0 0,1 0,1l0 2zm6 -5l1 0 0 1c0,0 1,0 1,0 0,-1 1,-1 1,-1 0,0 1,1 1,1 1,0 1,1 1,1 0,1 0,2 -1,3 -1,0 -1,0 -2,0 -1,0 -1,0 -2,0l0 2 -2 0 2 -7zm1 3c0,1 0,1 0,1 0,0 1,0 1,0 0,0 0,0 1,0 0,0 0,0 0,-1 0,0 0,0 0,-1 0,0 0,0 0,0 0,-1 0,-1 -1,-1 0,0 0,0 -1,1 0,0 0,0 0,0 0,1 0,1 0,1z"/>
+  <g id="_3013155915648">
+   <ellipse fill="url(#id1)" cx="-59" cy="-3" rx="10" ry="5"/>
+   <path fill="#FCFCFC" fill-rule="nonzero" d="M-67 -5l2 0 0 1c0,-1 0,-1 0,-1 1,0 1,0 1,0 1,0 1,0 1,1 1,0 1,0 1,1 0,1 0,2 -1,2 0,1 -1,1 -2,1 0,0 -1,0 -1,-1l-1 2 -1 0 1 -6zm1 3c0,0 0,0 1,1 0,0 0,0 0,0 0,0 1,0 1,0 0,0 0,-1 0,-1 1,0 1,-1 1,-1 0,0 0,-1 -1,-1 0,0 0,0 0,0 -1,0 -1,0 -1,0 0,0 0,1 -1,1 0,0 0,1 0,1zm6 2l-2 0 2 -6 1 0 0 2c0,0 0,-1 1,-1 0,0 0,0 0,0 1,0 1,0 1,0 1,1 1,1 1,1 0,0 0,1 0,1l-1 3 -1 0 0 -3c0,0 0,0 0,-1 0,0 0,0 0,0 0,0 0,0 0,0 0,0 -1,0 -1,0 0,0 0,1 0,1 -1,0 -1,0 -1,1l0 2zm5 -5l2 0 0 1c0,-1 0,-1 0,-1 1,0 1,0 1,0 1,0 1,0 1,1 1,0 1,0 1,1 0,1 0,2 -1,2 0,1 -1,1 -2,1 0,0 -1,0 -1,-1l-1 2 -1 0 1 -6zm1 3c0,0 0,0 1,1 0,0 0,0 0,0 0,0 1,0 1,0 0,0 0,-1 0,-1 1,0 1,-1 1,-1 0,0 0,-1 -1,-1 0,0 0,0 0,0 -1,0 -1,0 -1,0 0,0 0,1 -1,1 0,0 0,1 0,1z"/>
+  </g>
+ </g>
+</svg>
