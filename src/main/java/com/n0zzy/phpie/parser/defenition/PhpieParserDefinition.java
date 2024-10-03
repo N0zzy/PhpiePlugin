@@ -56,9 +56,9 @@ public class PhpieParserDefinition implements ParserDefinition {
         return new PhpieFile(viewProvider);
     }
 
-    @NotNull
+
     @Override
-    public PsiElement createElement(ASTNode node) {
+    public @NotNull PsiElement createElement(ASTNode node) {
         return PhpieTypes.Factory.createElement(node);
     }
 }

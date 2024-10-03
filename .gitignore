@@ -50,5 +50,8 @@ gradle.bat
 gradlew
 settings.gradle.kts
 build.gradle.kts
+gradle.properties
 src/main/java/com/n0zzy/sdk/language/psi
+src/main/java/com/n0zzy/phpie/lexer
+src/main/java/com/n0zzy/phpie/parser
 gradle

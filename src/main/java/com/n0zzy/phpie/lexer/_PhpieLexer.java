@@ -4,7 +4,6 @@
 package com.n0zzy.phpie.lexer;
 
 import com.intellij.lexer.FlexLexer;
-import com.intellij.psi.TokenType;
 import com.intellij.psi.tree.IElementType;
 import com.n0zzy.sdk.language.psi.PhpieTypes;
 
@@ -68,12 +67,14 @@ public class _PhpieLexer implements FlexLexer {
   private static final int [] ZZ_CMAP_BLOCKS = zzUnpackcmap_blocks();
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
-    "\11\0\2\1\2\0\1\1\22\0\1\1\17\0\12\2"+
-    "\1\0\1\3\1\4\1\0\1\5\1\6\1\0\32\7"+
-    "\1\0\1\10\2\0\1\7\1\0\1\11\1\7\1\12"+
-    "\1\7\1\13\2\7\1\14\4\7\1\15\1\16\1\7"+
-    "\1\17\2\7\1\20\1\7\1\21\5\7\1\22\1\0"+
-    "\1\23\u0182\0";
+    "\11\0\5\1\22\0\1\1\3\0\1\2\3\0\1\3"+
+    "\1\4\2\0\1\5\1\6\1\7\1\0\12\10\1\11"+
+    "\1\12\1\13\1\14\1\15\1\16\1\0\32\17\1\20"+
+    "\1\21\1\22\1\0\1\17\1\0\1\23\1\24\1\25"+
+    "\1\26\1\27\1\30\1\31\1\32\1\33\1\17\1\34"+
+    "\1\35\1\36\1\37\1\40\1\41\1\17\1\42\1\43"+
+    "\1\44\1\45\1\46\1\47\1\50\1\51\1\17\1\52"+
+    "\1\53\1\54\u0182\0";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[512];
@@ -100,12 +101,21 @@ public class _PhpieLexer implements FlexLexer {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\1\1\1\2\1\3\2\1\1\4\1\5\3\4"+
-    "\1\6\1\7\1\0\1\10\1\11\2\4\1\0\1\4"+
-    "\1\12\1\0\1\4\1\13\4\4\1\14";
+    "\1\0\1\1\1\2\1\1\1\3\1\4\1\5\1\1"+
+    "\1\6\1\7\1\10\2\1\1\11\1\12\1\13\1\14"+
+    "\1\15\17\12\1\16\1\17\1\20\2\21\1\22\1\6"+
+    "\1\23\1\0\1\24\1\25\1\12\1\26\5\12\1\27"+
+    "\7\12\1\30\16\12\1\21\1\0\13\12\1\31\5\12"+
+    "\1\32\11\12\1\33\1\34\1\12\1\21\1\0\2\12"+
+    "\1\35\5\12\1\36\1\37\4\12\1\40\7\12\1\41"+
+    "\5\12\1\42\1\43\1\12\1\44\1\45\1\46\1\47"+
+    "\3\12\1\50\13\12\1\51\1\52\1\53\14\12\1\54"+
+    "\1\55\1\56\1\57\2\12\1\60\1\61\1\62\1\63"+
+    "\4\12\1\64\1\12\1\65\1\66\1\67\5\12\1\70"+
+    "\1\71\1\72\1\73";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[29];
+    int [] result = new int[201];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -130,13 +140,35 @@ public class _PhpieLexer implements FlexLexer {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\24\0\24\0\24\0\50\0\74\0\120\0\24"+
-    "\0\144\0\170\0\214\0\24\0\24\0\240\0\24\0\120"+
-    "\0\264\0\310\0\334\0\360\0\120\0\u0104\0\u0118\0\24"+
-    "\0\u012c\0\u0140\0\u0154\0\u0168\0\120";
+    "\0\0\0\55\0\55\0\132\0\55\0\55\0\55\0\207"+
+    "\0\264\0\341\0\55\0\u010e\0\u013b\0\u0168\0\u0195\0\55"+
+    "\0\55\0\55\0\u01c2\0\u01ef\0\u021c\0\u0249\0\u0276\0\u02a3"+
+    "\0\u02d0\0\u02fd\0\u032a\0\u0357\0\u0384\0\u03b1\0\u03de\0\u040b"+
+    "\0\u0438\0\55\0\55\0\55\0\u0465\0\u0492\0\55\0\u04bf"+
+    "\0\55\0\u04ec\0\55\0\55\0\u0519\0\u0195\0\u0546\0\u0573"+
+    "\0\u05a0\0\u05cd\0\u05fa\0\u0195\0\u0627\0\u0654\0\u0681\0\u06ae"+
+    "\0\u06db\0\u0708\0\u0735\0\u0195\0\u0762\0\u078f\0\u07bc\0\u07e9"+
+    "\0\u0816\0\u0843\0\u0870\0\u089d\0\u08ca\0\u08f7\0\u0924\0\u0951"+
+    "\0\u097e\0\u09ab\0\u09d8\0\u0a05\0\u0a32\0\u0a5f\0\u0a8c\0\u0ab9"+
+    "\0\u0ae6\0\u0b13\0\u0b40\0\u0b6d\0\u0b9a\0\u0bc7\0\u0bf4\0\u0c21"+
+    "\0\u0c4e\0\u0c7b\0\u0ca8\0\u0cd5\0\u0d02\0\u0195\0\u0d2f\0\u0d5c"+
+    "\0\u0d89\0\u0db6\0\u0de3\0\u0e10\0\u0e3d\0\u0e6a\0\u0e97\0\u0195"+
+    "\0\u0195\0\u0ec4\0\u0ef1\0\u0f1e\0\u0f4b\0\u0f78\0\u0195\0\u0fa5"+
+    "\0\u0fd2\0\u0fff\0\u102c\0\u1059\0\u0195\0\u0195\0\u1086\0\u10b3"+
+    "\0\u10e0\0\u110d\0\u0195\0\u113a\0\u1167\0\u1194\0\u11c1\0\u11ee"+
+    "\0\u121b\0\u1248\0\u0195\0\u1275\0\u12a2\0\u12cf\0\u12fc\0\u1329"+
+    "\0\u0465\0\55\0\u1356\0\u0195\0\u0195\0\u0195\0\u0195\0\u1383"+
+    "\0\u13b0\0\u13dd\0\u140a\0\u1437\0\u1464\0\u1491\0\u14be\0\u14eb"+
+    "\0\u1518\0\u1545\0\u1572\0\u159f\0\u15cc\0\u15f9\0\u0195\0\u0195"+
+    "\0\u0195\0\u1626\0\u1653\0\u1680\0\u16ad\0\u16da\0\u1707\0\u1734"+
+    "\0\u1761\0\u178e\0\u17bb\0\u17e8\0\u1815\0\u0195\0\u0195\0\u0195"+
+    "\0\u0195\0\u1842\0\u186f\0\u0195\0\u0195\0\u0195\0\u0195\0\u189c"+
+    "\0\u18c9\0\u18f6\0\u1923\0\u0195\0\u1950\0\u0195\0\u0195\0\u0195"+
+    "\0\u197d\0\u19aa\0\u19d7\0\u1a04\0\u1a31\0\u0195\0\u0195\0\u0195"+
+    "\0\u0195";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[29];
+    int [] result = new int[201];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -159,24 +191,157 @@ public class _PhpieLexer implements FlexLexer {
   private static final int [] ZZ_TRANS = zzUnpacktrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\2\1\3\1\2\1\4\1\5\1\2\1\6\1\7"+
-    "\1\10\1\11\4\7\1\12\2\7\1\13\1\14\1\15"+
-    "\32\0\1\16\22\0\1\17\20\0\1\7\4\0\1\7"+
-    "\1\0\11\7\4\0\1\7\4\0\1\7\1\0\7\7"+
-    "\1\20\1\7\4\0\1\7\4\0\1\7\1\0\1\21"+
-    "\10\7\4\0\1\7\4\0\1\7\1\0\7\7\1\22"+
-    "\1\7\21\0\1\23\6\0\1\7\4\0\1\7\1\0"+
-    "\4\7\1\24\4\7\4\0\1\7\4\0\1\7\1\0"+
-    "\2\7\1\25\6\7\16\0\1\26\11\0\1\7\4\0"+
-    "\1\7\1\0\2\7\1\27\6\7\21\0\1\30\6\0"+
-    "\1\7\4\0\1\7\1\0\7\7\1\31\1\7\4\0"+
-    "\1\7\4\0\1\7\1\0\6\7\1\32\2\7\4\0"+
-    "\1\7\4\0\1\7\1\0\1\33\10\7\4\0\1\7"+
-    "\4\0\1\7\1\0\1\7\1\34\7\7\4\0\1\7"+
-    "\4\0\1\7\1\0\2\7\1\35\6\7\2\0";
+    "\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\2"+
+    "\1\11\1\12\1\13\1\14\1\15\1\2\1\16\1\17"+
+    "\1\20\1\21\1\22\1\23\1\24\1\25\1\26\1\27"+
+    "\1\30\1\31\1\17\1\32\3\17\1\33\1\17\1\34"+
+    "\1\35\1\36\1\37\1\40\1\17\1\41\2\17\1\42"+
+    "\1\43\1\44\74\0\1\45\3\0\21\45\1\46\5\45"+
+    "\20\0\1\47\46\0\1\50\1\11\55\0\1\51\61\0"+
+    "\1\52\53\0\1\53\54\0\1\54\47\0\1\17\6\0"+
+    "\1\17\3\0\27\17\13\0\1\17\6\0\1\17\3\0"+
+    "\1\17\1\55\16\17\1\56\6\17\13\0\1\17\6\0"+
+    "\1\17\3\0\17\17\1\57\7\17\13\0\1\17\6\0"+
+    "\1\17\3\0\1\60\11\17\1\61\2\17\1\62\11\17"+
+    "\13\0\1\17\6\0\1\17\3\0\4\17\1\63\10\17"+
+    "\1\64\11\17\13\0\1\17\6\0\1\17\3\0\12\17"+
+    "\1\65\1\17\1\66\10\17\1\67\1\17\13\0\1\17"+
+    "\6\0\1\17\3\0\10\17\1\70\4\17\1\71\4\17"+
+    "\1\72\4\17\13\0\1\17\6\0\1\17\3\0\15\17"+
+    "\1\73\11\17\13\0\1\17\6\0\1\17\3\0\5\17"+
+    "\1\74\5\17\1\75\1\76\12\17\13\0\1\17\6\0"+
+    "\1\17\3\0\1\77\3\17\1\100\22\17\13\0\1\17"+
+    "\6\0\1\17\3\0\17\17\1\101\2\17\1\102\4\17"+
+    "\13\0\1\17\6\0\1\17\3\0\4\17\1\103\22\17"+
+    "\13\0\1\17\6\0\1\17\3\0\4\17\1\104\14\17"+
+    "\1\105\2\17\1\106\2\17\13\0\1\17\6\0\1\17"+
+    "\3\0\7\17\1\107\7\17\1\110\7\17\13\0\1\17"+
+    "\6\0\1\17\3\0\20\17\1\111\6\17\13\0\1\17"+
+    "\6\0\1\17\3\0\7\17\1\112\17\17\13\0\1\45"+
+    "\6\0\1\45\3\0\27\45\13\0\1\45\6\0\1\45"+
+    "\3\0\7\45\1\113\17\45\13\0\1\50\105\0\1\114"+
+    "\23\0\1\17\6\0\1\17\3\0\20\17\1\115\6\17"+
+    "\13\0\1\17\6\0\1\17\3\0\4\17\1\116\22\17"+
+    "\13\0\1\17\6\0\1\17\3\0\20\17\1\117\1\120"+
+    "\5\17\13\0\1\17\6\0\1\17\3\0\1\121\26\17"+
+    "\13\0\1\17\6\0\1\17\3\0\14\17\1\122\12\17"+
+    "\13\0\1\17\6\0\1\17\3\0\5\17\1\123\21\17"+
+    "\13\0\1\17\6\0\1\17\3\0\20\17\1\124\6\17"+
+    "\13\0\1\17\6\0\1\17\3\0\22\17\1\125\4\17"+
+    "\13\0\1\17\6\0\1\17\3\0\21\17\1\126\5\17"+
+    "\13\0\1\17\6\0\1\17\3\0\14\17\1\127\12\17"+
+    "\13\0\1\17\6\0\1\17\3\0\17\17\1\130\7\17"+
+    "\13\0\1\17\6\0\1\17\3\0\14\17\1\131\12\17"+
+    "\13\0\1\17\6\0\1\17\3\0\21\17\1\132\5\17"+
+    "\13\0\1\17\6\0\1\17\3\0\16\17\1\133\10\17"+
+    "\13\0\1\17\6\0\1\17\3\0\21\17\1\134\5\17"+
+    "\13\0\1\17\6\0\1\17\3\0\13\17\1\135\13\17"+
+    "\13\0\1\17\6\0\1\17\3\0\24\17\1\136\2\17"+
+    "\13\0\1\17\6\0\1\17\3\0\10\17\1\137\4\17"+
+    "\1\140\11\17\13\0\1\17\6\0\1\17\3\0\1\17"+
+    "\1\141\25\17\13\0\1\17\6\0\1\17\3\0\21\17"+
+    "\1\142\5\17\13\0\1\17\6\0\1\17\3\0\12\17"+
+    "\1\143\14\17\13\0\1\17\6\0\1\17\3\0\1\144"+
+    "\26\17\13\0\1\17\6\0\1\17\3\0\10\17\1\145"+
+    "\16\17\13\0\1\17\6\0\1\17\3\0\17\17\1\146"+
+    "\7\17\13\0\1\17\6\0\1\17\3\0\1\147\25\17"+
+    "\1\150\13\0\1\17\6\0\1\17\3\0\4\17\1\151"+
+    "\22\17\13\0\1\17\6\0\1\17\3\0\10\17\1\152"+
+    "\16\17\13\0\1\45\6\0\1\45\3\0\10\45\1\153"+
+    "\16\45\35\0\1\154\32\0\1\17\6\0\1\17\3\0"+
+    "\21\17\1\155\5\17\13\0\1\17\6\0\1\17\3\0"+
+    "\1\156\26\17\13\0\1\17\6\0\1\17\3\0\4\17"+
+    "\1\157\22\17\13\0\1\17\6\0\1\17\3\0\2\17"+
+    "\1\160\24\17\13\0\1\17\6\0\1\17\3\0\20\17"+
+    "\1\161\6\17\13\0\1\17\6\0\1\17\3\0\20\17"+
+    "\1\162\1\163\5\17\13\0\1\17\6\0\1\17\3\0"+
+    "\1\164\26\17\13\0\1\17\6\0\1\17\3\0\4\17"+
+    "\1\165\22\17\13\0\1\17\6\0\1\17\3\0\13\17"+
+    "\1\166\13\17\13\0\1\17\6\0\1\17\3\0\4\17"+
+    "\1\167\22\17\13\0\1\17\6\0\1\17\3\0\1\170"+
+    "\26\17\13\0\1\17\6\0\1\17\3\0\4\17\1\171"+
+    "\22\17\13\0\1\17\6\0\1\17\3\0\2\17\1\172"+
+    "\24\17\13\0\1\17\6\0\1\17\3\0\15\17\1\173"+
+    "\11\17\13\0\1\17\6\0\1\17\3\0\12\17\1\174"+
+    "\14\17\13\0\1\17\6\0\1\17\3\0\4\17\1\175"+
+    "\22\17\13\0\1\17\6\0\1\17\3\0\4\17\1\176"+
+    "\22\17\13\0\1\17\6\0\1\17\3\0\23\17\1\177"+
+    "\3\17\13\0\1\17\6\0\1\17\3\0\21\17\1\200"+
+    "\5\17\13\0\1\17\6\0\1\17\3\0\12\17\1\201"+
+    "\14\17\13\0\1\17\6\0\1\17\3\0\22\17\1\202"+
+    "\4\17\13\0\1\17\6\0\1\17\3\0\5\17\1\203"+
+    "\21\17\13\0\1\17\6\0\1\17\3\0\21\17\1\204"+
+    "\5\17\13\0\1\17\6\0\1\17\3\0\21\17\1\205"+
+    "\5\17\13\0\1\17\6\0\1\17\3\0\15\17\1\206"+
+    "\11\17\13\0\1\17\6\0\1\17\3\0\10\17\1\207"+
+    "\16\17\13\0\1\17\6\0\1\17\3\0\12\17\1\210"+
+    "\14\17\13\0\1\45\6\0\1\45\3\0\20\45\1\211"+
+    "\6\45\44\0\1\212\23\0\1\17\6\0\1\17\3\0"+
+    "\17\17\1\213\7\17\13\0\1\17\6\0\1\17\3\0"+
+    "\11\17\1\214\15\17\13\0\1\17\6\0\1\17\3\0"+
+    "\7\17\1\215\17\17\13\0\1\17\6\0\1\17\3\0"+
+    "\20\17\1\216\6\17\13\0\1\17\6\0\1\17\3\0"+
+    "\21\17\1\217\5\17\13\0\1\17\6\0\1\17\3\0"+
+    "\10\17\1\220\16\17\13\0\1\17\6\0\1\17\3\0"+
+    "\22\17\1\221\4\17\13\0\1\17\6\0\1\17\3\0"+
+    "\14\17\1\222\12\17\13\0\1\17\6\0\1\17\3\0"+
+    "\12\17\1\223\14\17\13\0\1\17\6\0\1\17\3\0"+
+    "\1\224\26\17\13\0\1\17\6\0\1\17\3\0\21\17"+
+    "\1\225\5\17\13\0\1\17\6\0\1\17\3\0\4\17"+
+    "\1\226\22\17\13\0\1\17\6\0\1\17\3\0\17\17"+
+    "\1\227\7\17\13\0\1\17\6\0\1\17\3\0\20\17"+
+    "\1\230\6\17\13\0\1\17\6\0\1\17\3\0\1\231"+
+    "\26\17\13\0\1\17\6\0\1\17\3\0\4\17\1\232"+
+    "\22\17\13\0\1\17\6\0\1\17\3\0\10\17\1\233"+
+    "\16\17\13\0\1\17\6\0\1\17\3\0\17\17\1\234"+
+    "\7\17\13\0\1\17\6\0\1\17\3\0\10\17\1\235"+
+    "\16\17\13\0\1\17\6\0\1\17\3\0\2\17\1\236"+
+    "\24\17\13\0\1\17\6\0\1\17\3\0\24\17\1\237"+
+    "\2\17\13\0\1\17\6\0\1\17\3\0\21\17\1\240"+
+    "\5\17\13\0\1\17\6\0\1\17\3\0\4\17\1\241"+
+    "\22\17\13\0\1\17\6\0\1\17\3\0\1\242\26\17"+
+    "\13\0\1\17\6\0\1\17\3\0\14\17\1\243\12\17"+
+    "\13\0\1\17\6\0\1\17\3\0\12\17\1\244\14\17"+
+    "\13\0\1\17\6\0\1\17\3\0\3\17\1\245\23\17"+
+    "\13\0\1\17\6\0\1\17\3\0\12\17\1\246\14\17"+
+    "\13\0\1\17\6\0\1\17\3\0\2\17\1\247\24\17"+
+    "\13\0\1\17\6\0\1\17\3\0\10\17\1\250\16\17"+
+    "\13\0\1\17\6\0\1\17\3\0\13\17\1\251\13\17"+
+    "\13\0\1\17\6\0\1\17\3\0\5\17\1\252\21\17"+
+    "\13\0\1\17\6\0\1\17\3\0\16\17\1\253\10\17"+
+    "\13\0\1\17\6\0\1\17\3\0\21\17\1\254\5\17"+
+    "\13\0\1\17\6\0\1\17\3\0\2\17\1\255\24\17"+
+    "\13\0\1\17\6\0\1\17\3\0\2\17\1\256\24\17"+
+    "\13\0\1\17\6\0\1\17\3\0\14\17\1\257\12\17"+
+    "\13\0\1\17\6\0\1\17\3\0\2\17\1\260\24\17"+
+    "\13\0\1\17\6\0\1\17\3\0\7\17\1\261\17\17"+
+    "\13\0\1\17\6\0\1\17\3\0\2\17\1\262\24\17"+
+    "\13\0\1\17\6\0\1\17\3\0\22\17\1\263\4\17"+
+    "\13\0\1\17\6\0\1\17\3\0\21\17\1\264\5\17"+
+    "\13\0\1\17\6\0\1\17\3\0\20\17\1\265\6\17"+
+    "\13\0\1\17\6\0\1\17\3\0\26\17\1\266\13\0"+
+    "\1\17\6\0\1\17\3\0\7\17\1\267\17\17\13\0"+
+    "\1\17\6\0\1\17\3\0\15\17\1\270\11\17\13\0"+
+    "\1\17\6\0\1\17\3\0\4\17\1\271\22\17\13\0"+
+    "\1\17\6\0\1\17\3\0\1\272\26\17\13\0\1\17"+
+    "\6\0\1\17\3\0\1\273\26\17\13\0\1\17\6\0"+
+    "\1\17\3\0\4\17\1\274\22\17\13\0\1\17\6\0"+
+    "\1\17\3\0\21\17\1\275\5\17\13\0\1\17\6\0"+
+    "\1\17\3\0\21\17\1\276\5\17\13\0\1\17\6\0"+
+    "\1\17\3\0\4\17\1\277\22\17\13\0\1\17\6\0"+
+    "\1\17\3\0\14\17\1\300\12\17\13\0\1\17\6\0"+
+    "\1\17\3\0\14\17\1\301\12\17\13\0\1\17\6\0"+
+    "\1\17\3\0\2\17\1\302\24\17\13\0\1\17\6\0"+
+    "\1\17\3\0\2\17\1\303\24\17\13\0\1\17\6\0"+
+    "\1\17\3\0\4\17\1\304\22\17\13\0\1\17\6\0"+
+    "\1\17\3\0\21\17\1\305\5\17\13\0\1\17\6\0"+
+    "\1\17\3\0\4\17\1\306\22\17\13\0\1\17\6\0"+
+    "\1\17\3\0\4\17\1\307\22\17\13\0\1\17\6\0"+
+    "\1\17\3\0\3\17\1\310\23\17\13\0\1\17\6\0"+
+    "\1\17\3\0\20\17\1\311\6\17\3\0";
 
   private static int [] zzUnpacktrans() {
-    int [] result = new int[380];
+    int [] result = new int[6750];
     int offset = 0;
     offset = zzUnpacktrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -214,11 +379,12 @@ public class _PhpieLexer implements FlexLexer {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\3\11\3\1\1\11\3\1\2\11\1\0\1\11"+
-    "\3\1\1\0\2\1\1\0\1\1\1\11\5\1";
+    "\1\0\2\11\1\1\3\11\3\1\1\11\4\1\3\11"+
+    "\17\1\3\11\2\1\1\11\1\1\1\11\1\0\2\11"+
+    "\37\1\1\0\37\1\1\0\35\1\1\11\77\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[29];
+    int [] result = new int[201];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -533,65 +699,300 @@ public class _PhpieLexer implements FlexLexer {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1:
-            { return PhpieTypes.BAD_CHARACTER;
+            { 
             }
           // fall through
-          case 13: break;
+          case 60: break;
           case 2:
-            { return PhpieTypes.WHITE_SPACE;
+            { return PhpieTypes.T_WHITE_SPACE;
             }
           // fall through
-          case 14: break;
+          case 61: break;
           case 3:
-            { return PhpieTypes.SEMICOLON;
+            { return PhpieTypes.C_LPAREN;
             }
           // fall through
-          case 15: break;
+          case 62: break;
           case 4:
-            { return PhpieTypes.IDENTIFIER;
+            { return PhpieTypes.C_RPAREN;
             }
           // fall through
-          case 16: break;
+          case 63: break;
           case 5:
-            { return PhpieTypes.BACKSLASH;
+            { return PhpieTypes.C_COMMA;
             }
           // fall through
-          case 17: break;
+          case 64: break;
           case 6:
-            { return PhpieTypes.LBRACE;
+            { return PhpieTypes.T_DIGIT;
             }
           // fall through
-          case 18: break;
+          case 65: break;
           case 7:
-            { return PhpieTypes.RBRACE;
+            { return PhpieTypes.C_COLON;
             }
           // fall through
-          case 19: break;
+          case 66: break;
           case 8:
-            { return PhpieTypes.TAG_CLOSE;
+            { return PhpieTypes.C_SEMICOLON;
             }
           // fall through
-          case 20: break;
+          case 67: break;
           case 9:
-            { return PhpieTypes.AS_KEYWORD;
+            { return PhpieTypes.C_QUESTION;
             }
           // fall through
-          case 21: break;
+          case 68: break;
           case 10:
-            { return PhpieTypes.USE_KEYWORD;
+            { yybegin(YYINITIAL);return PhpieTypes.T_IDENTIFIER;
             }
           // fall through
-          case 22: break;
+          case 69: break;
           case 11:
-            { return PhpieTypes.TAG_OPEN;
+            { return PhpieTypes.C_LBRACKET;
             }
           // fall through
-          case 23: break;
+          case 70: break;
           case 12:
-            { return PhpieTypes.NAMESPACE_KEYWORD;
+            { return PhpieTypes.C_BACKSLASH;
             }
           // fall through
-          case 24: break;
+          case 71: break;
+          case 13:
+            { return PhpieTypes.C_RBRACKET;
+            }
+          // fall through
+          case 72: break;
+          case 14:
+            { return PhpieTypes.C_LBRACE;
+            }
+          // fall through
+          case 73: break;
+          case 15:
+            { return PhpieTypes.C_PIPE;
+            }
+          // fall through
+          case 74: break;
+          case 16:
+            { return PhpieTypes.C_RBRACE;
+            }
+          // fall through
+          case 75: break;
+          case 17:
+            { return PhpieTypes.T_VARIABLE;
+            }
+          // fall through
+          case 76: break;
+          case 18:
+            { return PhpieTypes.C_ARROW;
+            }
+          // fall through
+          case 77: break;
+          case 19:
+            { return PhpieTypes.C_DCOLON;
+            }
+          // fall through
+          case 78: break;
+          case 20:
+            { return PhpieTypes.C_DARROW;
+            }
+          // fall through
+          case 79: break;
+          case 21:
+            { return PhpieTypes.T_CLOSE_TAG;
+            }
+          // fall through
+          case 80: break;
+          case 22:
+            { return PhpieTypes.A_AS;
+            }
+          // fall through
+          case 81: break;
+          case 23:
+            { return PhpieTypes.E_DO;
+            }
+          // fall through
+          case 82: break;
+          case 24:
+            { return PhpieTypes.E_IF;
+            }
+          // fall through
+          case 83: break;
+          case 25:
+            { return PhpieTypes.E_FOR;
+            }
+          // fall through
+          case 84: break;
+          case 26:
+            { return PhpieTypes.K_NEW;
+            }
+          // fall through
+          case 85: break;
+          case 27:
+            { return PhpieTypes.E_TRY;
+            }
+          // fall through
+          case 86: break;
+          case 28:
+            { return PhpieTypes.K_USE;
+            }
+          // fall through
+          case 87: break;
+          case 29:
+            { return PhpieTypes.E_CASE;
+            }
+          // fall through
+          case 88: break;
+          case 30:
+            { return PhpieTypes.E_ELSE;
+            }
+          // fall through
+          case 89: break;
+          case 31:
+            { return PhpieTypes.K_ENUM;
+            }
+          // fall through
+          case 90: break;
+          case 32:
+            { return PhpieTypes.E_GOTO;
+            }
+          // fall through
+          case 91: break;
+          case 33:
+            { return PhpieTypes.M_SELF;
+            }
+          // fall through
+          case 92: break;
+          case 34:
+            { return PhpieTypes.T_THIS;
+            }
+          // fall through
+          case 93: break;
+          case 35:
+            { return PhpieTypes.T_OPEN_TAG;
+            }
+          // fall through
+          case 94: break;
+          case 36:
+            { return PhpieTypes.E_BREAK;
+            }
+          // fall through
+          case 95: break;
+          case 37:
+            { return PhpieTypes.E_CATCH;
+            }
+          // fall through
+          case 96: break;
+          case 38:
+            { return PhpieTypes.K_CLASS;
+            }
+          // fall through
+          case 97: break;
+          case 39:
+            { return PhpieTypes.M_CONST;
+            }
+          // fall through
+          case 98: break;
+          case 40:
+            { return PhpieTypes.M_FINAL;
+            }
+          // fall through
+          case 99: break;
+          case 41:
+            { return PhpieTypes.E_THROW;
+            }
+          // fall through
+          case 100: break;
+          case 42:
+            { return PhpieTypes.K_TRAIT;
+            }
+          // fall through
+          case 101: break;
+          case 43:
+            { return PhpieTypes.E_WHILE;
+            }
+          // fall through
+          case 102: break;
+          case 44:
+            { return PhpieTypes.M_PUBLIC;
+            }
+          // fall through
+          case 103: break;
+          case 45:
+            { return PhpieTypes.E_RETURN;
+            }
+          // fall through
+          case 104: break;
+          case 46:
+            { return PhpieTypes.M_STATIC;
+            }
+          // fall through
+          case 105: break;
+          case 47:
+            { return PhpieTypes.E_SWITCH;
+            }
+          // fall through
+          case 106: break;
+          case 48:
+            { return PhpieTypes.E_DEFAULT;
+            }
+          // fall through
+          case 107: break;
+          case 49:
+            { return PhpieTypes.A_EXTENDS;
+            }
+          // fall through
+          case 108: break;
+          case 50:
+            { return PhpieTypes.E_FINALLY;
+            }
+          // fall through
+          case 109: break;
+          case 51:
+            { return PhpieTypes.E_FOREACH;
+            }
+          // fall through
+          case 110: break;
+          case 52:
+            { return PhpieTypes.M_PRIVATE;
+            }
+          // fall through
+          case 111: break;
+          case 53:
+            { return PhpieTypes.M_ABSTRACT;
+            }
+          // fall through
+          case 112: break;
+          case 54:
+            { return PhpieTypes.E_CONTINUE;
+            }
+          // fall through
+          case 113: break;
+          case 55:
+            { return PhpieTypes.K_FUNCTION;
+            }
+          // fall through
+          case 114: break;
+          case 56:
+            { return PhpieTypes.K_INTERFACE;
+            }
+          // fall through
+          case 115: break;
+          case 57:
+            { return PhpieTypes.K_NAMESPACE;
+            }
+          // fall through
+          case 116: break;
+          case 58:
+            { return PhpieTypes.M_PROTECTED;
+            }
+          // fall through
+          case 117: break;
+          case 59:
+            { return PhpieTypes.A_IMPLEMENTS;
+            }
+          // fall through
+          case 118: break;
           default:
             zzScanError(ZZ_NO_MATCH);
           }

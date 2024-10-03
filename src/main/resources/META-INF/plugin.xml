@@ -8,6 +8,7 @@
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
   <name>Phpie(PHP) Language Support</name>
 
+
   <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
   <vendor url="https://github.com/n0zzy">N0zzy@Phpie</vendor>
   <resource-bundle>messages.PhpieBundle</resource-bundle>
@@ -27,8 +28,6 @@
     <codeInsight.template.postfixTemplateProvider
             language="Phpie"
             implementationClass="com.n0zzy.phpie.templates.PhpiePostfixTemplateProvider"/>
-    <postStartupActivity
-            implementation="com.n0zzy.phpie.notification.PhpieStartupNotification"/>
     <fileType
             name="Phpie(PHP)"
             implementationClass="com.n0zzy.phpie.language.PhpieFileType"
@@ -44,5 +43,11 @@
     <completion.contributor
             language="Phpie"
             implementationClass="com.n0zzy.phpie.contributors.PhpieCompletionContributor"/>
+
+    <postStartupActivity
+            implementation="com.n0zzy.phpie.actions.PhpieStartupActivity"/>
+
+    <editorFactoryDocumentListener implementation="com.n0zzy.phpie.listener.PhpieDocumentListener"/>
+    <statusBarWidgetFactory implementation="com.n0zzy.phpie.components.PhpieWidgetFactory" id="Phpie"/>
   </extensions>
 </idea-plugin>

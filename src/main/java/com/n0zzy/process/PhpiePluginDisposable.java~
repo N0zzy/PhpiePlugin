@@ -1,0 +1,53 @@
+package com.n0zzy.process;
+
+import com.intellij.openapi.Disposable;
+import com.intellij.openapi.application.ApplicationAdapter;
+import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.project.ProjectManager;
+import com.intellij.openapi.project.ProjectManagerListener;
+import org.jetbrains.annotations.NotNull;
+
+import java.io.IOException;
+
+public class PhpiePluginDisposable implements Disposable {
+
+    PhpiePluginDisposable(Project project) throws IOException, InterruptedException {
+        project.getMessageBus().connect().subscribe(ProjectManager.TOPIC, new ProjectManagerListener() {
+            @Override
+            public void projectClosed(@NotNull Project project) {
+                try {
+                    stopLanguageServer();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        startLanguageServer();
+    }
+
+    public void startLanguageServer() throws IOException, InterruptedException {
+        var process = LanguageServer.process();
+        if( process == null || !process.isAlive()) {
+            LanguageServer.start();
+        }
+    }
+
+    public void stopLanguageServer() throws InterruptedException {
+        var process = LanguageServer.process();
+        if( process != null && process.isAlive()) {
+            process.destroy();
+            process.waitFor();
+        }
+    }
+
+    @Override
+    public void dispose() {
+        try {
+            stopLanguageServer();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}

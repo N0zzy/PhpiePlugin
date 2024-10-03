@@ -1,0 +1,1 @@
+<spot></spot>class Child extends Parent implements Interface1, Interface2 {}

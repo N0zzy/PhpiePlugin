@@ -13,7 +13,7 @@ public class PhpieFileType extends LanguageFileType {
 
     public static final PhpieFileType INSTANCE = new PhpieFileType();
 
-    protected PhpieFileType() {
+    public PhpieFileType() {
         super(PhpieLanguage.INSTANCE);
     }
 

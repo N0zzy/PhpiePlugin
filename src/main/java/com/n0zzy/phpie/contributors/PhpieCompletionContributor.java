@@ -21,7 +21,7 @@ public class PhpieCompletionContributor  extends CompletionContributor {
     }
 
     private void addBrace() {
-        extend(CompletionType.SMART, PlatformPatterns.psiElement( PhpieTypes.LBRACE ), new CompletionProvider<CompletionParameters>() {
+        extend(CompletionType.SMART, PlatformPatterns.psiElement( PhpieTypes.C_LBRACE ), new CompletionProvider<CompletionParameters>() {
 
             @Override
             protected void addCompletions(@NotNull CompletionParameters parameters, @NotNull ProcessingContext context, @NotNull CompletionResultSet result) {
@@ -31,7 +31,7 @@ public class PhpieCompletionContributor  extends CompletionContributor {
     }
 
     private void addSemicolon() {
-        extend(CompletionType.SMART, PlatformPatterns.psiElement( PhpieTypes.SEMICOLON ), new CompletionProvider<CompletionParameters>() {
+        extend(CompletionType.SMART, PlatformPatterns.psiElement( PhpieTypes.C_RBRACE  ), new CompletionProvider<CompletionParameters>() {
 
             @Override
             protected void addCompletions(@NotNull CompletionParameters parameters, @NotNull ProcessingContext context, @NotNull CompletionResultSet result) {

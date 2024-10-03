@@ -6,12 +6,12 @@ import com.intellij.openapi.project.Project;
 
 
 @SuppressWarnings("ALL")
-public class PhpieStartupNotification  {
-    public PhpieStartupNotification(Project project){
+public class PhpieMessageNotification {
+    public PhpieMessageNotification(Project project, String message){
         final Notification notification = new Notification(
                 "ProjectOpenNotification",
                 "Phpie",
-                "Phpie is running",
+                message,
                 NotificationType.INFORMATION);
         notification.notify(project);
     }

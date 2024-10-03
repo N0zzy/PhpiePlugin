@@ -17,6 +17,10 @@ public class PhpiePostfixTemplateProvider  implements PostfixTemplateProvider {
         templates.add(new PhpieOpenTagPostfixTemplate(this));
         templates.add(new PhpieNamespaceInlinePostfixTemplate(this));
         templates.add(new PhpieNamespaceBlockPostfixTemplate(this));
+        templates.add(new PhpieClassSimplePostfixTemplate(this));
+        templates.add(new PhpieClassExtendsPostfixTemplate(this));
+        templates.add(new PhpieClassImplementsPostfixTemplate(this));
+        templates.add(new PhpieClassFullPostfixTemplate(this));
     }
 
 
